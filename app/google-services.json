@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "973071418783",
+    "project_id": "wardrobecollection-65762",
+    "storage_bucket": "wardrobecollection-65762.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973071418783:android:5daddd82da11458c0129aa",
+        "android_client_info": {
+          "package_name": "tn.esprit.mywardrobe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973071418783-go1m988hem0so5u17rs16quu3negifja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3JYI2iJtNnwkQwMCuuoGmDA1ZWxM1zFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973071418783-go1m988hem0so5u17rs16quu3negifja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
