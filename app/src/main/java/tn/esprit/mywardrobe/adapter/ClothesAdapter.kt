@@ -1,5 +1,6 @@
 package tn.esprit.mywardrobe.adapter
 
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,9 +8,15 @@ import android.view.WindowId
 import android.widget.FrameLayout
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import tn.esprit.mywardrobe.ClothesModel
+import tn.esprit.mywardrobe.MainActivity
 import tn.esprit.mywardrobe.R
 
-class ClothesAdapter(private val layoutId: Int) : RecyclerView.Adapter<ClothesAdapter.ViewHolder>(){
+class ClothesAdapter(
+    private val context: MainActivity,
+    private val clothesList : List<ClothesModel>,
+    private val layoutId: Int) : RecyclerView.Adapter<ClothesAdapter.ViewHolder>(){
 
     // boite pour ranger tout les composants à controler
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
@@ -24,7 +31,14 @@ class ClothesAdapter(private val layoutId: Int) : RecyclerView.Adapter<ClothesAd
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {}
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        // recuperer les informations de la vetement
+        val currentClothes = clothesList[position]
 
-    override fun getItemCount(): Int = 5
+        // utiliser glide pour recuperer l'image à partir de son lien -> composant
+        Glide.with(context).load(Uri.parse(currentClothes.imageUrl)).into(holder.clothesImage)
+
+    }
+
+    override fun getItemCount(): Int = clothesList.size
 }
