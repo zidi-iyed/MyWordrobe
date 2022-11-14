@@ -18,7 +18,7 @@
     <style name="DefaultTextStyle">
         <item name="android:textColor">@color/lightGray</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">@font/Kanit-Regular</item>
+        <item name="android:fontFamily"></item>
     </style>
 
     <!-- Creer le composant sous titre par defaut -->

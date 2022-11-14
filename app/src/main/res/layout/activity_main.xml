@@ -15,11 +15,11 @@
         android:layout_marginTop="@dimen/default_margin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        style=""/>
+        style="@style/DefaultTextStyle"/>
 
     <TextView
         android:id="@+id/page_title"
-        style=""
+        style="@style/TitleTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/home_page_title"
