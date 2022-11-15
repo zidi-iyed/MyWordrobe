@@ -12,13 +12,16 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="android:spinnerItemStyle">@style/DefaultTextStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/DefaultTextStyle</item>
     </style>
 
     <!-- Creer le composant titre par defaut -->
     <style name="DefaultTextStyle">
         <item name="android:textColor">@color/lightGray</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily"></item>
+
     </style>
 
     <!-- Creer le composant sous titre par defaut -->
