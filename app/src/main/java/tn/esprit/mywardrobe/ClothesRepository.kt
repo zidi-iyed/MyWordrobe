@@ -48,5 +48,8 @@ class ClothesRepository {
     // mettre à jour un objet cloth en bdd
     fun updateCloth(cloth: ClothesModel) = databaseRef.child(cloth.id).setValue(cloth)
 
+    // supprimer vetement de bdd
+    fun deleteCloth(cloth:ClothesModel) = databaseRef.child(cloth.id).removeValue()
+
 
 }
