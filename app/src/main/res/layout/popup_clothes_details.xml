@@ -2,8 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="360dp"
-    android:layout_height="500dp"
-    android:padding="@dimen/item_margin"
+    android:layout_height="460dp"
+    android:padding="25dp"
+
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -33,7 +34,7 @@
         app:layout_constraintStart_toEndOf="@+id/cardView2"
         app:layout_constraintTop_toTopOf="@+id/cardView2"
         android:layout_marginLeft="30dp"
-        style=""/>
+        style="@style/TitleTextStyle"/>
 
     <ImageView
         android:id="@+id/close_button"
@@ -43,7 +44,8 @@
         android:layout_marginRight="@dimen/default_margin"
         app:layout_constraintBottom_toBottomOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:tint="@color/black"/>
 
     <TextView
         android:id="@+id/popup_clothes_description_title"
@@ -53,7 +55,7 @@
         android:text="@string/popup_clothes_description_title"
         app:layout_constraintStart_toStartOf="@+id/cardView2"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
-        style=""/>
+        style="@style/TitleTextStyle"/>
 
     <TextView
         android:id="@+id/popup_clothes_description_subtitle"
@@ -62,7 +64,7 @@
         android:text="@string/popup_clothes_description_subtitle"
         app:layout_constraintStart_toStartOf="@+id/popup_clothes_description_title"
         app:layout_constraintTop_toBottomOf="@+id/popup_clothes_description_title"
-        style=""/>
+        style="@style/DefaultTextStyle"/>
 
     <TextView
         android:id="@+id/popup_clothes_type_title"
@@ -72,7 +74,7 @@
         android:text="@string/popup_clothes_type_title"
         app:layout_constraintStart_toStartOf="@+id/popup_clothes_description_subtitle"
         app:layout_constraintTop_toBottomOf="@+id/popup_clothes_description_subtitle"
-        style=""/>
+        style="@style/TitleTextStyle"/>
 
     <TextView
         android:id="@+id/popup_clothes_type_subtitle"
@@ -81,7 +83,7 @@
         android:text="@string/popup_clothes_type_subtitle"
         app:layout_constraintStart_toStartOf="@+id/popup_clothes_type_title"
         app:layout_constraintTop_toBottomOf="@+id/popup_clothes_type_title"
-        style=""/>
+        style="@style/DefaultTextStyle"/>
 
     <TextView
         android:id="@+id/popup_clothes_season_title"
@@ -91,7 +93,7 @@
         android:text="@string/popup_clothes_season_title"
         app:layout_constraintStart_toStartOf="@+id/popup_clothes_type_subtitle"
         app:layout_constraintTop_toBottomOf="@+id/popup_clothes_type_subtitle"
-        style=""/>
+        style="@style/TitleTextStyle"/>
 
     <TextView
         android:id="@+id/popup_clothes_season_subtitle"
@@ -100,7 +102,7 @@
         android:text="@string/popup_clothes_season_subtitle"
         app:layout_constraintStart_toStartOf="@+id/popup_clothes_season_title"
         app:layout_constraintTop_toBottomOf="@+id/popup_clothes_season_title"
-        style=""/>
+        style="@style/DefaultTextStyle"/>
 
     <View
         android:id="@+id/view_separation"
@@ -119,7 +121,8 @@
         android:src="@drawable/ic_trash"
         app:layout_constraintBottom_toBottomOf="@+id/view_separation"
         app:layout_constraintEnd_toStartOf="@+id/view_separation"
-        app:layout_constraintTop_toTopOf="@+id/view_separation" />
+        app:layout_constraintTop_toTopOf="@+id/view_separation"
+        app:tint="@color/black"/>
 
     <ImageView
         android:id="@+id/star_button"
@@ -129,6 +132,7 @@
         android:src="@drawable/ic_unstar"
         app:layout_constraintBottom_toBottomOf="@+id/view_separation"
         app:layout_constraintStart_toEndOf="@+id/view_separation"
-        app:layout_constraintTop_toTopOf="@+id/view_separation" />
+        app:layout_constraintTop_toTopOf="@+id/view_separation"
+        app:tint="@color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

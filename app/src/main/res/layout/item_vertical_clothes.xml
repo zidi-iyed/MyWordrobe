@@ -32,8 +32,8 @@
 
     <TextView
         android:id="@+id/name_item"
-        style=""
-        android:layout_width="wrap_content"
+        style="@style/SubstitleTextStyle"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/item_margin"
         android:text="@string/item_clothes_name"
@@ -42,9 +42,9 @@
 
     <TextView
         android:id="@+id/description_item"
-        style=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/DefaultTextStyle"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
         android:text="@string/item_clothes_description"
         app:layout_constraintStart_toStartOf="@+id/name_item"
         app:layout_constraintTop_toTopOf="@+id/view_separation" />
@@ -57,6 +57,7 @@
         android:layout_marginRight="@dimen/default_margin"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cardView"/>
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        app:tint="@color/green"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

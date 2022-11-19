@@ -18,12 +18,12 @@
         android:text="@string/home_page_last_clothes_section"
         android:layout_marginTop="@dimen/default_margin"
         android:layout_marginLeft="@dimen/default_margin"
-        style=""/>
+        style="@style/TitleTextStyle"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/vertical_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="270dp"
         android:layout_marginTop="@dimen/default_margin"
         android:layout_marginLeft="@dimen/default_margin"
         android:orientation="vertical"

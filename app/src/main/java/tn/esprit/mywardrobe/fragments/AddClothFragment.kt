@@ -43,7 +43,10 @@ class AddClothFragment(
 
         // recuperer le bouton confirmer
         val confirmButton = view.findViewById<Button>(R.id.confirm_button)
-        confirmButton.setOnClickListener { sendForm(view) }
+        confirmButton.setOnClickListener {
+            sendForm(view)
+            view.invalidate()
+        }
 
         return view
     }

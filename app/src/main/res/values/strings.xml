@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">My Wardrobe</string>
 
+    <string name="bottom_home_item">Acceuil</string>
+    <string name="bottom_collection_item">Collection</string>
+    <string name="bottom_add_cloth_item">Ajouter</string>
+
     <!-- Page d'accueil -->
     <string name="home_page_title">A Habiller</string>
     <string name="home_page_last_clothes_section">Dernières vêtements</string>
