@@ -32,7 +32,7 @@
         android:id="@+id/name_input"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginTop="@dimen/item_margin"
         android:hint="@string/add_clothes_page_name_input"
         android:paddingLeft="@dimen/default_margin"
         style="@style/DefaultTextStyle"/>
@@ -41,7 +41,7 @@
         android:id="@+id/description_input"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginTop="@dimen/item_margin"
         android:hint="@string/add_clothes_page_description_input"
         android:paddingLeft="@dimen/default_margin"
         style="@style/DefaultTextStyle"/>
@@ -50,7 +50,7 @@
         android:id="@+id/type_spinner"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginTop="@dimen/item_margin"
         android:entries="@array/add_clothes_page_type_spinner_input"
         android:paddingLeft="@dimen/default_margin" />
 
@@ -58,7 +58,7 @@
         android:id="@+id/season_spinner"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginTop="@dimen/item_margin"
         android:entries="@array/add_clothes_page_season_spinner_input"
         android:paddingLeft="@dimen/default_margin" />
 
@@ -70,6 +70,6 @@
         android:background="@color/darkGray"
         android:text="@string/add_clothes_page_confirm_button"
         android:textSize="24dp"
-        android:textColor="@color/white"
+        android:textColor="@color/white"/>
 
 </LinearLayout>

@@ -22,7 +22,7 @@ class HomeFragment(private val context: MainActivity) : Fragment() {
 
         //recuperer le recuclerview
         val horizantalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
-        horizantalRecyclerView.adapter = ClothesAdapter(context, clothesList, R.layout.item_horizontal_clothes)
+        horizantalRecyclerView.adapter = ClothesAdapter(context, clothesList.filter { !it.liked }, R.layout.item_horizontal_clothes)
 
         // recuperer le second recyclerview
         val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
